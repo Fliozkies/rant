@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, strict-origin-when-cross-origin">
+    <link rel="stylesheet" href="style/colorTemplate.css">
+    <link rel="stylesheet" href="style/customStyles.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/tags.css">
+    <title>Document</title>
+    <script src="tabs.js" defer></script>
+    <script src="rantModal.js" defer></script>
+</head>
+
+<body class="bg-1">
+    <header class="top-container roundCorner-r">
+        <img src="res/Rant-removebg-preview.png" alt="Rant logo" class="logo" />
+        <nav class="navBar noUnderline-r fontColor-1-r">
+            <button role="tab" aria-selected="true" data-target="about" class="bg-2 pad2-1 font-1 noBorder">
+                About
+            </button>
+            <button role="tab" aria-selected="false" data-target="self-rant" class="bg-2 pad2-1 font-1 noBorder">
+                Self-rant
+            </button>
+            <button role="tab" aria-selected="false" data-target="public-rant" class="bg-2 pad2-1 font-1 noBorder">
+                Public-rant
+            </button>
+        </nav>
+    </header>
+
+    <main class="mainContent centerChildren roundCorner-r">
+        <article id="about" role="tabpanel" class="about justify bg-2 pad3-1">
+            <h2 class="font-1 noMargin5 centerText">ABOUT</h2>
+            <p>
+                This site is made primarily for ranting. Whatever emotion you're feeling, let it out thru words.
+                Don't bottle it up, it can suffocate your heart. Even if you don't care about others, you should
+                at least care for your self.
+            </p>
+            <p>
+                I made this site because I want to rant as well, and record the time
+                the rant was made. Aside from that, it is also to hone my skills as a web developer.
+            </p>
+            <p class="noMargin4">
+                I hope you will take your time to reflect on your feelings, vent it all here thru words. Let
+                yourself feel heard.
+            </p>
+        </article>
+
+        <article id="self-rant" role="tabpanel" hidden>
+            <h2 class="font-1 noMargin5 centerText">SELF-RANT</h2>
+
+            <div id="rantsContainer" class="rants-container"></div>
+            
+            <button class="rantBox font-1 fontColor-1">Rant</div>
+        </article>
+
+        <article id="public-rant" role="tabpanel" hidden>
+            <h2 class="font-1 noMargin5 centerText">PUBLIC-RANT</h2>
+        </article>
+    </main>
+
+    <!-- Rant Modal -->
+    <div id="rantModal" class="modal" hidden>
+        <div class="modal-content bg-2 roundCorner">
+            <div class="modal-header">
+                <h2 class="font-1 noMargin5">Create Your Rant</h2>
+                <button class="close-btn font-1 noBorder bg-2" aria-label="Close modal">&times;</button>
+            </div>
+            <form id="rantForm" class="modal-body">
+                <div class="form-group">
+                    <label for="rantTitle" class="font-1">Title:</label>
+                    <input type="text" id="rantTitle" name="rantTitle" class="rant-input"
+                        placeholder="Give your rant a title..." required>
+                </div>
+                <div class="form-group">
+                    <label for="rantContent" class="font-1">Rant:</label>
+                    <textarea id="rantContent" name="rantContent" class="rant-textarea" placeholder="Let it all out..."
+                        rows="8" required></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="cancel-btn font-1 pad2-1 roundCorner noBorder">Cancel</button>
+                    <button type="submit" class="submit-btn font-1 pad2-1 roundCorner noBorder fontColor-1">Submit
+                        Rant</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

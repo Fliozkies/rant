@@ -1,0 +1,12 @@
+CHOOSING PROPER HTML5 STRUCTURAL ELEMENTS
+
+Is this the unique core of the page? → <main>
+Is it reusable standalone content? → <article>
+Is it grouped by topic with a heading? → <section>
+Is it navigation? → <nav>
+Is it secondary or tangential? → <aside>
+Is it introductory? → <header>
+Is it closing/meta info? → <footer>
+Is it media + caption? → <figure>
+Is it contact or author information for the nearest article or page, not random locations? → <address>
+None of the above? → <div>

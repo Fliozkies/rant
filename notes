@@ -1,0 +1,15 @@
+A rant website.
+
+nav contains = about, self-rants, public-rants, login
+
+at about tab, it contains information about the site.
+
+at self-rants tab, one can post a rant. Consecutive rants or rants under that post
+-be next in line. They can be read by clicking the arrow pointer.
+
+at public-rants tab, one can see rants posted by either anonymous or unanonymous users. These
+-are rants that intentionally posted publicly as the user wants to be seen/heard, and is 
+-interested to hearing out what others have to say.
+
+login tab is self-explanatory. This is also not required in order for a user to be able to post
+-rants. This ensures flexibility and anonymousity of the user if willed.
