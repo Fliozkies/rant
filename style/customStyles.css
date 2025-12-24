@@ -303,6 +303,7 @@
 .rant-card {
     background-color: rgb(235, 211, 133);
     border-radius: 0.5rem;
+    width: 30rem;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

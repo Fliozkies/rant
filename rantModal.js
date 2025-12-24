@@ -92,7 +92,7 @@ function escapeHtml(text) {
 // Optional: Save to localStorage
 function saveRantToStorage(rant) {
     let rants = JSON.parse(localStorage.getItem('rants') || '[]');
-    rants.unshift(rant); // Add to beginning
+    rants.push(rant); 
     localStorage.setItem('rants', JSON.stringify(rants));
 }
 
